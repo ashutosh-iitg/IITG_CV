@@ -1,0 +1,270 @@
+%-------------------------
+% Resume in Latex
+% Author : Arkadeep Das, Manas Daruka, Ayush Sharma, Abhinav Gupta
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabu}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+\includegraphics[width=2.25cm,clip]{iitg_logo.jpg}
+
+}\hspace{.1cm}\parbox{\dimexpr\linewidth-2.5cm\relax}{
+\begin{tabu}to\linewidth{X[-1,l] X[-1,r]}
+  \textbf{\LARGE Ashutosh Kumar Mandal} & +91-9435685646\\
+  {Roll No. 160121010} & \href{mailto:ashutosh.iitg.16@gmail.com}{ashutosh.iitg.16@gmail.com}\\
+  {B.Tech : Engineering Physics} &  \href{https://github.com/ashutosh-iitg}{github.com/ashutosh-iitg}\\
+  {Indian Institute of Technology Guwahati} & \href{https://www.linkedin.com/in/ashutosh-iitg/}{linkedin.com/in/ashutosh-iitg}
+\end{tabu}
+}
+
+
+
+%-----------EDUCATION-----------------
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Indian Institute of Technology Guwahati}{Guwahati, India}
+%       {Bachelor of Technology in Mathematics and Computing ;  GPA: 8.10}{July. 2015 -- July. 2019 (Expected)}
+%     \resumeSubheading
+%       {Burdwan Model School}{Burdwan, W.B}
+%       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
+%   \resumeSubHeadingListEnd
+
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\begin{tabu}to\linewidth{|X[-1,c]| X[-1,c]| X[-1,c]| X[-1,c]|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech & Indian Institute of Technology Guwahati & 7.76 & 2016 - 2020\\
+  \hline
+  Senior Secondary & CBSE & 93.8\% & 2016 \\
+  \hline
+  Secondary & CBSE & 10.0 & 2014\\
+  \hline
+\end{tabu}
+
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MOST GASE Q+ Summer Program}{Taiwan}
+      {Summer Student - Prof. Sheng Yun Wu, National Dong Hwa University}{June - July 2019}
+      \resumeItemListStart
+
+% If you want to include sub-list headings also then uncomment the code below and use it.
+
+%         \resumeItem{Sub-Topic-1}
+%           {Details \href{https://www.something.com}{Some (Hyperlink)} \newline
+% More Details}
+
+% If you do not want sub-list headings then use itemize like below.
+
+     \item Designed a 3D printed model to study the characteristics of phase transitions and the effect of instability on macroscopic properties of a system.
+     \item Captured video of the experiment and analyzed it using OpenCV to predict the behavior of the system under instability.
+     
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Python Interface for a CMOS Camera}{}{Bachelor's Thesis Project, Prof. Bosanta R. Boruah, IIT Guwahati}{July 2019 - May 2020}
+      \resumeItemListStart
+      \item Developed a python interface for a CMOS camera (Thorlabs DCC3240M) using the available libraries and drivers from the camera manufacturer to facilitate efficient management of various camera controls.
+      \resumeItemListEnd
+      
+     \resumeSubheading
+     {Flight Scraper}{}
+    {\href{https://github.com/ashutosh-iitg/flight_scraper}{\textit{\small{Project link}}}}{August 2019}
+    \resumeItemListStart
+      \item Developed a Python based web scraper to run and perform searches on flight prices for a particular destination. It saves an excel file with the results and sends an email with quick statistics.
+    \resumeItemListEnd
+    
+      \resumeSubheading
+      {Techniche Website}{}
+      {\href{https://2018.techniche.org/Techniche/}{Project link}}{October 2017 - September 2018}
+      \resumeItemListStart
+\item Developed a responsive website to showcase various modules of the techno-management festival of IIT Guwahati using Bootstrap. Created various registration forms across the website using PHP.
+    \item Integrated the registration page with payment interface for collection of registration fee and exploited Elastic Email API to automate the mailing process for sending confirmations and updates.
+      \resumeItemListEnd
+     
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{Programming Languages}
+ {C/C++, Python}
+ \resumeSubItem{Web Technologies}{PHP, HTML, CSS, Javascript}
+ \resumeSubItem{Database management}
+ {MySQL}
+ \resumeSubItem{Miscellaneous}
+ {Git, \LaTeX, MATLAB}
+ \resumeSubItem{Operating Systems}
+  {Windows, Linux}
+ %{Windows, Linux\hfill * \textit{Elementary Proficiency}}
+ 
+ \resumeSubHeadingListEnd
+\vspace*{-0.1cm}
+\section{Key courses taken}
+ \vspace{-2pt}
+ \begin{multicols}{2}
+ \begin{itemize}[leftmargin = *,itemsep=-3pt]
+\item Pattern Recognition and Machine Learning
+\item Introduction to Computing
+\item Computing Lab
+\item Linear Algebra
+\item Multivariable Calculus
+
+
+\item Soft Computing in Engineering
+\item Computational Physics
+%\item Data Structures and Algorithms
+%\item Computer Networks
+%%%%%%%%%%%%%%%%%%
+% \item Probability Theory and Random Processes 
+\item Neural Imaging and Signal Systems
+\item Data Structures and Algorithms (online)
+ \item Microprocessor Architecture and Programming
+ %\item Signals and Systems
+ \end{itemize}
+ \end{multicols}
+ %\vspace*{0.1cm}
+ % ** \textit{Theory + Lab} 
+  \hfill 
+\vspace*{-0.2cm}
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+
+\vspace{1pt}
+\resumeSubItem{Organizer, Technothlon}\hfill{\small{\textit{October 2016 - September 2017}}}
+{\vspace{1pt}
+\resumeItemListStart
+\item Successfully organized `Contador de Electronica', an electronics based event for Juniors squad for Technothlon Mains.
+\item Performed LED(Learn, Experience, Discover; A Technothlon initiative) in various schools of Guwahati to increase interest of school students in Science through demonstration of simple experiments.
+\item Organized Technothlon'17 prelims in Dhanbad city with a participation of over 200 teams from various schools.
+\resumeItemListEnd
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-9.25pt}
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeSubItem{Joint Entrance Examination - Adv 2016}{Among top 5\% of all selected candidates (0.2 million) appearing for the test.}
+%\resumeSubItem {Robo Fiesta - 2014} {Secured 3rd position in zonal round of Robo-fiesta organized by Times GlobaCom (P) Ltd.}
+%\resumeSubItem{West Bengal Joint Entrance Examination, 2016}{Among top 1\% of all candidates (120,000+) appearing for the test.}
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.25pt}
+\section{Extra-Curriculars}
+\resumeSubHeadingListStart
+\resumeSubItem{Volleyball}
+{\vspace{-5pt}
+\resumeItemListStart
+    \item Secured 1st position in 2017 and 3rd position in 2018 in inter-hostel volleyball competition in Spardha.
+    \item Represented my school volleyball team in zonal round of CBSE Cluster II Volleyball Championship in 2012-13 and 2013-14.
+\resumeItemListEnd }
+
+\resumeSubHeadingListEnd
+
+ 
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
